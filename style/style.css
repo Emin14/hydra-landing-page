@@ -559,7 +559,7 @@ margin-bottom: 45px;
 }
 
 .tech-section__banner-slide  {
-    background: url(./img/pexels-rodnae-productions-3.jpg) no-repeat top center;
+    background: url(/img/pexels-rodnae-productions-3.jpg) no-repeat top center;
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -709,10 +709,7 @@ margin-bottom: 112px;
 
 /* ----------------------------------------------------MAIN---------------------------------------------------------------------- */
              /* ------------------------------------optin-section-------------------------------------- */
-
-.optin {
-    margin-bottom: 89px;
-}
+             
     .optin-section {
         min-width: 630px;
         min-height: 1008px;
