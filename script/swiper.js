@@ -1,29 +1,17 @@
-var swiper = new Swiper(".tech-section__banner__swiper", {
-    direction: "vertical",
-    enabled: false,
+var swiper = new Swiper(".technologies__firms__swiper", {
   navigation: {
-    nextEl: ".tech-section__banner-btn-next",
-    prevEl: ".tech-section__banner-btn-prev",
-  },
-  breakpoints: {
-    575.98: {
-        enabled: true,
-    },
-}  
-});
-var swiper = new Swiper(".tech-section__firms__swiper", {
-  navigation: {
-    nextEl: ".tech-section__firms-btn-next",
-    prevEl: ".tech-section__firms-btn-prev",
+    nextEl: ".technologies__firms-btn-next",
+    prevEl: ".technologies__firms-btn-prev",
   },
 });
-var swiper = new Swiper(".main__contacts__swiper", {
+var swiper = new Swiper(".contacts__swiper", {
+  slidesPerView: 1,
   navigation: {
-    nextEl: ".main__contacts-btn-next",
-    prevEl: ".main__contacts-btn-prev",
+    nextEl: ".contacts-btn-next",
+    prevEl: ".contacts-btn-prev",
   },
 });
-var swiper = new Swiper(".process-section__stages-swiper", {
+var swiper = new Swiper(".stages__augments-swiper", {
   navigation: {
     nextEl: ".stages-btn-next",
     prevEl: ".stages-btn-prev",
