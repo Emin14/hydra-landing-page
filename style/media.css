@@ -10,18 +10,25 @@
         display: none;
     }
 
-.title-font {
-    font-size: 2.6rem;
-    line-height: 3.2rem;
+    .title-font {
+        font-size: 2.6rem;
+        line-height: 4rem;
+        }
+
+    .arrow-wrapper {
+        display: none;
     }
 }
 
 /* --------------------------------------------------------КНОПКА НА САЙТЕ----------------------------------------------------------- */
 @media (max-width: 575.98px) {
-.button {
-    font-size: 1.4rem;
-    line-height: 1.7rem;
-}
+    .button {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        padding: 16px 63px;
+        display: inline-block;
+        margin: 0 auto;
+    }
 }   
 
 /* --------------------------------------------------------КНОПКА ДЛЯ СЛАЙДЕРА----------------------------------------------------------- */
@@ -37,22 +44,22 @@
     }
 }
 
+
 /* ------------------------------------------------------------HEADER----------------------------------------------------------- */
 @media (max-width: 575.98px) {
     .header {
         grid-template-columns: 1fr;
         margin-bottom: 11.38px;
-        padding-top: 25.66px;
+        padding-top: 25.66px; 
         height: 100%;
         margin-bottom: 50px;
     }
-
+    
     #logo-icon {
-        width: 69px;
-        height: 59.88px;
-        margin-right: 11px;
+      width: 69px;
+      height: 59.88px;
+      margin-right: 11px;
     }
-
     #logo-word {
         width: 45.98px;
         height: 28px;
@@ -81,7 +88,7 @@
     }
 
     .header.open {
-        display: block;
+         display: block;
         background-color: #2c4232;
         justify-content: space-between;
         position: fixed;
@@ -98,10 +105,10 @@
     .header.open .header__nav {
         display: flex;
         flex-direction: column;
-        gap: 90px;
-        align-items: flex-start;
-        width: fit-content;
-        margin: 0 auto;
+       gap: 90px;
+       align-items:flex-start;
+       width: fit-content; 
+       margin: 0 auto;
     }
 
     .header__buttons {
@@ -110,12 +117,12 @@
 
     .header__menu {
         display: inline-block;
-        vertical-align: middle;
+        vertical-align:middle;
     }
 
     .header__hamburger {
         display: inline-block;
-        vertical-align: top;
+        vertical-align:top;
     }
 
     .header__links {
@@ -137,17 +144,9 @@
         font-size: 2.7rem;
         line-height: 3.6rem;
         font-weight: 600;
-    
-    }
-
-    .header__buttons {
-        align-items: flex-start;
-        gap: 20px;
     }
 
     .header__button-1.button, .header__button-2.button  {
-        width: auto;
-        height: auto;
         border: none;
         background: none;
         color: inherit;
@@ -163,19 +162,16 @@
     .main {
         margin-bottom: 81px;
     }
-    
-    .top-section {
-        margin-bottom: 59px;
-    }
-    
-    
-    .main__depthsVR {
+}
+/* --------------------------------------section promo-------------------------------------- */
+@media (max-width: 575.98px) {
+    .promo {
         flex-wrap: wrap-reverse;
         justify-content: center;
         margin-bottom: 53px;
     }
-
-    .depthsVR__info__title {
+    
+    .promo__title {
         font-size: 3.6rem;
         line-height: 4.4rem;
         margin-bottom: 36px;
@@ -194,7 +190,7 @@
     .promo__button {
         justify-content: center;
     }
-    #depthsVR__info-arrow {
+    #promo__button-arrow {
         display: none;
     }
 
@@ -208,7 +204,11 @@
 
 /* --------------------------------------section contacts-------------------------------------- */
 @media (max-width: 575.98px) {
-    .main__contacts-decstop {
+    .contacts {
+        margin-bottom: 59px;
+    }
+    
+    .contacts-decstop {
         display: none;
     }
 
@@ -224,8 +224,8 @@
 
     .contacts__description {
         font-weight: 400;
-        font-size: 1.4rem;
-        line-height: 1.7rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
     }
 
     .contacts__title {
@@ -233,15 +233,20 @@
     }
 }
 
-/* ----------------------------------------------------MAIN---------------------------------------------------------------------- */
-             /* ---------------------------------------middle-section-------------------------------------- */
-                                /* ------------------introduction-block-----------*/    
+/* --------------------------------------section information-------------------------------------- */  
 @media (max-width: 575.98px) {
     .information {
         margin-bottom: 26px;
         }
+
+    .information__box {
+        margin-bottom: 38px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
     
-    .middle-section__introduction .middle-section__text, .middle-section-arrow {
+    .information__introduction .information__text, .information-arrow {
         display: none;
     }
 
@@ -251,20 +256,19 @@
 
     .information__text {
         display: none;
-    }
+        }
 
     .information__title {
         display: block;
         text-align: center;
         padding: 0;
         width: 100%;
+        flex: 0 1 auto; 
     }
 }
-    /* ----------------------------------------------------MAIN---------------------------------------------------------------------- */
-             /* ---------------------------------------middle-section-------------------------------------- */
-                                /* ------------------middle-section__about-----------*/
 
 /* --------------------------------- */
+
 @media (max-width: 575.98px) {
     .information__about {
         display: block;
@@ -283,20 +287,19 @@
         margin: 0 auto;
         margin-bottom: 51px;
     }
-    .about-block__text {
+
+    .information__about-img img{
+        border-radius: 140px 60px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    .about__text {
         margin-bottom: 34px;
     }
 
     .about__title {
         display: none;
     }    
-
-    .about-block__btn {
-        width: 276px;
-        height: 56px;
-        margin: 0 auto;
-    }
-
 }
 
 /* --------------------------------------section cards-------------------------------------- */
@@ -325,7 +328,7 @@
     .technologies__banner {
         margin-bottom: 0;
         }
-    .tech-section__banner__swiper {
+    .technologies__banner__swiper {
         height: 163.35px;
         border-radius: 60px;
 
@@ -361,7 +364,7 @@
         right: 5%;
     }
     
-    .tech-section__firms-btn-prev {
+    .technologies__firms-btn-prev {
         display: grid;
         bottom: 20%;
         left: 5%;
@@ -370,14 +373,14 @@
 
 /* --------------------------------------section stages-------------------------------------- */
 @media (max-width: 575.98px) {
-    .process-section {
+    .stages {
         margin-bottom: 81px;;
     }
 
     .stages__augments-decstop {
         display: none;
     }
-    .process-section__stages-mobile {
+    .stages__augments-mobile {
         display: block;
     }
 
@@ -394,9 +397,7 @@
     }
 }
 
-/* ----------------------------------------------------MAIN---------------------------------------------------------------------- */
-             /* ------------------------------------optin-section-------------------------------------- */
-
+/* --------------------------------------section optin-------------------------------------- */    
 @media (max-width: 575.98px) {
     .optin__form {
         min-width: 300px;
@@ -408,84 +409,57 @@
         margin-bottom: 21px;
     }
 
-    .optin-section__line {
-        display: none;
-    }
-
-    .optin-section__line-mobile {
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 19px;
-    }
-
-    .optin-section__button {
-        width: 100%;
-    }
-
-    .optin-section__inputs {
-        grid-template: 1fr 1fr 1fr 1fr 1fr 4fr/ 1fr;
-        grid-gap: 22px;
+    .form__inputs {
+        row-gap: 22px;
+        margin-bottom: 52px;
       }
 
     .form-registration {
       font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.7rem;
       grid-column-start: span 1;
-    }
-
-    .fullwidth-high {
-        padding: 6% 0 60% 8%;
+      padding: 18px 29px;
     }
 }
 
 /* ----------------------------------------------------FOOTER---------------------------------------------------------------------- */
+
 @media (max-width: 575.98px) {
 
     .footer {
         padding-bottom: 89px;
         }    
     
-    .footer-top {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 61px;
+    .footer__menu {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        margin-bottom: 38px;
+        padding-bottom: 61px;
     }
     
-    
-    .footer-top__line, .no-mobile {
-        display: none;
-    }
-    .footer-top__button {
-        width: 100%;
-    }
-    .footer-top__title {
+
+    .footer__menu_title {
         text-align: center;
     }
     
-    .footer-top__logo {
+    .footer__menu_logo {
         margin-bottom: 56.13px;
     }
-    .footer-top__title {
+    .footer__menu_title {
         margin-bottom: 29px;
     }
     
-    .footer-top__icons {
+    .footer__menu_icons {
         margin-bottom: 47px;
     }
     
-    .footer-bottom__line {
-        margin-bottom: 38px;
+    .column:not(:last-child){
+        border: none;
     }
     
-    .footer-bottom__line {
-        display: none;
-    }
-    
-    .footer-bottom__line-mobile {
-        display: block;
-        margin: 0 auto 38px auto;
-    }
-    
-    .footer-bottom__text {
+    .copyright {
         padding: 0 58px;
     }
 }
