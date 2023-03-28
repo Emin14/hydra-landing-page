@@ -6,8 +6,7 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     min-width: 320px;
     position: relative;
     width: 100%;
@@ -58,7 +57,6 @@ li, a {
   }
 
 /* --------------------------------------------------------Повторяющиеся блоки----------------------------------------------------------- */
-
 .text-font {
     font-weight: 400;
     font-size: 1.6rem;
