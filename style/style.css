@@ -13,6 +13,7 @@ html, body {
     color: #FFFFFF;
     font-size: 10px;
     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 
 }
 
@@ -20,6 +21,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+li, a {
 li, a {
     list-style-type: none;
     text-decoration: none;
@@ -62,12 +64,14 @@ li, a {
     font-size: 1.6rem;
     line-height: 2rem;
     min-width: 250px;
+    min-width: 250px;
 }
 
 .title-font {
     font-weight: 700;
     font-size: 3.6rem;
     line-height: 4.4rem;
+    text-transform: uppercase;
     text-transform: uppercase;
     }
 
@@ -88,14 +92,29 @@ li, a {
     border-radius: 40px;
     color: #343045;
     display: inline-flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     white-space:nowrap;
     padding: 16px 37px;
     justify-self:center;
+    white-space:nowrap;
+    padding: 16px 37px;
+    justify-self:center;
 }
 
+@media (min-width: 575.99px) {
+    .button:hover {
+        background: linear-gradient(90deg, #f0e25c 0%, #ba6f3a 100%);
+    }
+    a:hover:not(.button) {
+        color: #f0e25c;
+    }
+    .button:active {
+        transform: translate(1%, 5%)
+    }
+}
 @media (min-width: 575.99px) {
     .button:hover {
         background: linear-gradient(90deg, #f0e25c 0%, #ba6f3a 100%);
