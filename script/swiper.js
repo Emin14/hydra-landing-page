@@ -1,25 +1,25 @@
-var swiper = new Swiper(".technologies__firms__swiper", {
+var swiper = new Swiper(".technologies-firms__swiper", {
   navigation: {
-    nextEl: ".technologies__firms-btn-next",
-    prevEl: ".technologies__firms-btn-prev",
+    nextEl: ".technologies-firms__button_next",
+    prevEl: ".technologies-firms__button_prev",
   },
 });
 var swiper = new Swiper(".contacts__swiper", {
   slidesPerView: 1,
   navigation: {
-    nextEl: ".contacts-btn-next",
-    prevEl: ".contacts-btn-prev",
+    nextEl: ".contacts__button_next",
+    prevEl: ".contacts__button_prev",
   },
 });
-var swiper = new Swiper(".stages__augments-swiper", {
+var swiper = new Swiper(".augments__swiper", {
   navigation: {
-    nextEl: ".stages-btn-next",
-    prevEl: ".stages-btn-prev",
+    nextEl: ".augment__button_next",
+    prevEl: ".augment__button_prev",
   },
 });
-var swiper = new Swiper(".bottom-section__cards-swiper", {
+var swiper = new Swiper(".cards__swiper", {
   navigation: {
-    nextEl: ".cards__btn-next",
-    prevEl: ".cards__btn-prev",
+    nextEl: ".cards__button_next",
+    prevEl: ".cards__button_prev",
   },
 });

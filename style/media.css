@@ -6,10 +6,6 @@
         line-height: 1.5rem;
     }
 
-    .no-mobile {
-        display: none;
-    }
-
     .title-font {
         font-size: 2.6rem;
         line-height: 4rem;
@@ -17,6 +13,10 @@
 
     .arrow-wrapper {
         display: none;
+    }
+
+    a:hover:not(.button) {
+        color: inherit;
     }
 }
 
@@ -28,6 +28,14 @@
         padding: 16px 63px;
         display: inline-block;
         margin: 0 auto;
+    }
+
+    .button:hover {
+        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    }
+    .header__buttons .button {
+        background: transparent;
+        transform: none;
     }
 }   
 
@@ -43,7 +51,6 @@
         height: 44px;
     }
 }
-
 
 /* ------------------------------------------------------------HEADER----------------------------------------------------------- */
 @media (max-width: 575.98px) {
@@ -146,7 +153,7 @@
         font-weight: 600;
     }
 
-    .header__button-1.button, .header__button-2.button  {
+    .header__buttons button  {
         border: none;
         background: none;
         color: inherit;
@@ -165,10 +172,19 @@
 }
 /* --------------------------------------section promo-------------------------------------- */
 @media (max-width: 575.98px) {
-    .promo {
-        flex-wrap: wrap-reverse;
-        justify-content: center;
+    .main__promo {
         margin-bottom: 53px;
+    }
+
+    .promo {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .promo__text {
+        align-self: center;
+        flex-basis: auto;
+        flex-shrink: 1;
     }
     
     .promo__title {
@@ -187,28 +203,28 @@
         display: none;
     }
 
-    .promo__button {
+    .promo__links {
         justify-content: center;
     }
-    #promo__button-arrow {
+
+    .promo__arrow{
         display: none;
     }
 
     .promo__img {
-        width: 340px;
-        height: 296px;
         padding: 10px;
         margin-bottom: 30px;
+        flex-basis: auto;
     }
 }
 
 /* --------------------------------------section contacts-------------------------------------- */
 @media (max-width: 575.98px) {
-    .contacts {
+    .main__comtacts {
         margin-bottom: 59px;
     }
     
-    .contacts-decstop {
+    .contacts__decstop {
         display: none;
     }
 
@@ -218,7 +234,7 @@
         padding: 0;
     }
 
-    .contacts-mobile {
+    .contacts__mobile {
         display: flex;
     }
 
@@ -239,7 +255,7 @@
         margin-bottom: 26px;
         }
 
-    .information__box {
+    .exposition {
         margin-bottom: 38px;
         display: flex;
         justify-content: space-between;
@@ -258,42 +274,43 @@
         display: none;
         }
 
-    .information__title {
-        display: block;
+    .exposition__title {
+        grid-template-columns: 1fr;
         text-align: center;
         padding: 0;
         width: 100%;
-        flex: 0 1 auto; 
+    }
+
+    .exposition__text {
+        display: none;
     }
 }
 
 /* --------------------------------- */
 
 @media (max-width: 575.98px) {
-    .information__about {
-        display: block;
+    .about {
+        /* display: block; */
+        flex-direction: column;
         margin-bottom: 60px;
     }
 
-    .information__about_title {
-        display: block;
-        padding-top: 0;
-        text-align: center;
+    .about__text {
+        flex-basis: auto;
+        flex-shrink: 1;
     }
 
-    .information__about-img {
-        width: 337px;
-        height: 358px;
-        margin: 0 auto;
+    .about__img {
         margin-bottom: 51px;
+        flex-basis: auto;
     }
 
-    .information__about-img img{
+    .about__img img{
         border-radius: 140px 60px;
         transform: matrix(1, 0, 0, 1, 0, 0);
     }
 
-    .about__text {
+    .about__description {
         margin-bottom: 34px;
     }
 
@@ -320,12 +337,16 @@
     .card {
         width: 100%;
     }
+
+    .card:hover {
+        transform: none;
+    }
 }
 
 
 /* --------------------------------------section technologies-------------------------------------- */
 @media (max-width: 575.98px) {
-    .technologies__banner {
+    .technologies-banner {
         margin-bottom: 0;
         }
     .technologies__banner__swiper {
@@ -334,7 +355,7 @@
 
     }
 
-    .technologies__banner-btn {
+    .technologies-banner__button {
         display: none;
     }
 
@@ -342,29 +363,26 @@
         filter: none;
     }
 
-    .technologies__firms {
+    .technologies-firms {
         margin-bottom: 0;
     }
 
-    .technologies__firms__swiper {
+    .technologies-firms__swiper {
         display: block;
     }
 
-    .technologies__firms-decstop {
+    .technologies-firms__decstop {
         display: none;
     }
 
-    .technologies__firms-decstop {
-        margin-bottom: 0;
-    }
 
-    .technologies__firms-btn-next {
+    .technologies-firms__button_next {
         display: grid;
         bottom: 20%;
         right: 5%;
     }
     
-    .technologies__firms-btn-prev {
+    .technologies-firms__button_prev {
         display: grid;
         bottom: 20%;
         left: 5%;
@@ -377,10 +395,10 @@
         margin-bottom: 81px;;
     }
 
-    .stages__augments-decstop {
+    .augments__decstop {
         display: none;
     }
-    .stages__augments-mobile {
+    .augments__mobile {
         display: block;
     }
 
@@ -399,7 +417,7 @@
 
 /* --------------------------------------section optin-------------------------------------- */    
 @media (max-width: 575.98px) {
-    .optin__form {
+    .form {
         min-width: 300px;
         width: 100%;
         padding: 45px 22px 65px 21px;
@@ -414,7 +432,7 @@
         margin-bottom: 52px;
       }
 
-    .form-registration {
+    .form__input {
       font-weight: 400;
       font-size: 1.4rem;
       line-height: 1.7rem;
@@ -440,22 +458,24 @@
     }
     
 
-    .footer__menu_title {
+    .footer-menu__social_network {
         text-align: center;
-    }
-    
-    .footer__menu_logo {
-        margin-bottom: 56.13px;
-    }
-    .footer__menu_title {
         margin-bottom: 29px;
     }
     
-    .footer__menu_icons {
+    .footer-menu__logo {
+        margin-bottom: 56.13px;
+    }
+
+    .footer-menu__services, .footer-menu__links {
+        display: none;
+    }
+    
+    .footer-menu__icons {
         margin-bottom: 47px;
     }
     
-    .column:not(:last-child){
+    .footer-menu__item:not(:last-child){
         border: none;
     }
     
